@@ -1,0 +1,38 @@
+Collecting numpy==1.26.4
+  Downloading numpy-1.26.4-cp312-cp312-win_amd64.whl.metadata (61 kB)
+Collecting scipy==1.11.4
+  Downloading scipy-1.11.4-cp312-cp312-win_amd64.whl.metadata (60 kB)
+Collecting scikit-learn==1.4.2
+  Downloading scikit_learn-1.4.2-cp312-cp312-win_amd64.whl.metadata (11 kB)
+Collecting joblib>=1.2.0 (from scikit-learn==1.4.2)
+  Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.4.2)
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Downloading numpy-1.26.4-cp312-cp312-win_amd64.whl (15.5 MB)
+   ---------------------------------------- 15.5/15.5 MB 1.5 MB/s  0:01:22
+Downloading scipy-1.11.4-cp312-cp312-win_amd64.whl (43.7 MB)
+   ---------------------------------------- 43.7/43.7 MB 1.8 MB/s  0:00:24
+Downloading scikit_learn-1.4.2-cp312-cp312-win_amd64.whl (10.6 MB)
+   ---------------------------------------- 10.6/10.6 MB 1.7 MB/s  0:00:06
+Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Installing collected packages: threadpoolctl, numpy, joblib, scipy, scikit-learn
+  Attempting uninstall: threadpoolctl
+    Found existing installation: threadpoolctl 3.6.0
+    Uninstalling threadpoolctl-3.6.0:
+      Successfully uninstalled threadpoolctl-3.6.0
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.26.4
+    Uninstalling numpy-1.26.4:
+      Successfully uninstalled numpy-1.26.4
+  Attempting uninstall: joblib
+    Found existing installation: joblib 1.5.3
+    Uninstalling joblib-1.5.3:
+      Successfully uninstalled joblib-1.5.3
+  Attempting uninstall: scipy
+    Found existing installation: scipy 1.11.4
+    Uninstalling scipy-1.11.4:
+      Successfully uninstalled scipy-1.11.4
+  Attempting uninstall: scikit-learn
+    Found existing installation: scikit-learn None
+

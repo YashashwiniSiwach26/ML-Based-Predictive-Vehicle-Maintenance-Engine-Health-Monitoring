@@ -1,10 +1,14 @@
 import streamlit as st
 import pickle
 import numpy as np
+from pathlib import Path
 
-# Load the trained model 
-with open('model.pkl', 'rb') as file:
+# Load the trained model stored beside this app.
+MODEL_PATH = Path(__file__).resolve().parent / "model.pkl"
+
+with MODEL_PATH.open('rb') as file:
     model = pickle.load(file)
+
 
 # Define the customized ranges for each feature based on dataset statistics
 custom_ranges = {
@@ -73,7 +77,8 @@ def main():
 
     # Reset button
     if st.button("Reset Values"):
-        st.experimental_rerun()
+        st.session_state.clear()
+        st.rerun()
 
 # Function to predict engine condition
 def predict_condition(engine_rpm, lub_oil_pressure, fuel_pressure, coolant_pressure, lub_oil_temp, coolant_temp, temp_difference):
